@@ -1,0 +1,152 @@
+#pro-team,
+#heritage,
+#team-leaders {
+  width: 83vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+#hero-section {
+  margin-bottom: 76px;
+}
+#about-hero {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+/* #about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+} */
+#pro-team::before {
+  content: "";
+  position: absolute;
+  width: 91vw;
+  height: 12vw;
+  bottom: 100px;
+  left: 0;
+  background: #fff;
+}
+
+#heritage,
+#team-leaders {
+  margin-bottom: 111px;
+}
+
+@media screen and (min-width: 576px) {
+  main,
+  #pro-team,
+  #heritage,
+  #team-leaders {
+    width: 74.6vw;
+    margin: 0 auto;
+  }
+  #hero-section {
+    position: relative;
+  }
+  #pro-team {
+    background-color: #fff;
+    position: absolute;
+    bottom: -9px;
+    left: 60px;
+    width: 515px;
+  }
+  #pro-team h1 {
+    top: -175px;
+    right: 0;
+    letter-spacing: 5px;
+  }
+  #about-hero {
+    z-index: -2;
+  }
+  #pro-team hr {
+    margin-bottom: 73px;
+  }
+  #pro-team::before {
+    top: -87px;
+    width: 73vw;
+    height: 88px;
+  }
+  #heritage {
+    margin-bottom: 202px;
+  }
+  #heritage hr {
+    margin-bottom: 49px;
+  }
+  #heritage h2 {
+    width: 58vw;
+    font-size: 72px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    margin-bottom: 62px;
+  }
+  #team-leaders {
+    margin-bottom: 239px;
+  }
+  #team-leaders h2 {
+    margin-bottom: 49px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    width: 77vw;
+    margin: 0 auto;
+  }
+  #pro-team {
+    left: 41.7vw;
+  }
+  #pro-team h1 {
+   
+    letter-spacing: -5px;
+  }
+  #pro-team::before {
+    width: 55vw;
+    height: 503px;
+    left: -9vw;
+    bottom: -6px;
+    z-index: -1;
+  }
+
+  #heritage {
+    display: flex;
+    justify-content: space-between;
+  }
+  #heritage-text {
+    width: 31vw;
+  }
+  #team-leaders {
+    display: flex;
+    justify-content: space-between;
+  }
+  .team-portraits {
+    width: 51vw;
+  }
+  .leader-img {
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  .hover-links {
+    width: 100%;
+    height: 50%;
+    top: 10%;
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .img-box:hover .leader-img {
+    filter: brightness(50%);
+  }
+  .img-box:hover .hover-links {
+    opacity: 1;
+  }
+}

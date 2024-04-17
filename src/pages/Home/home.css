@@ -1,0 +1,207 @@
+/* ================================================ */
+/* Paramour Section */
+/* ================================================ */
+.paramour {
+  width: 100%;
+  height: 150vw;
+  background-size: cover;
+  overflow: hidden;
+  /* filter: brightness(80%); */
+  margin-bottom: 4.5rem;
+}
+
+.paramour-text {
+  width: 83%;
+  height: 334px;
+  margin: 116px auto 110px;
+  color: #ffffff;
+}
+.slide-bar {
+  position: absolute;
+  width: 29%;
+  height: 5.5vw;
+  bottom: 0px;
+  left: -80px;
+}
+.slide-bar button {
+  background-color: #fff;
+  color: var(--m-grey);
+  font-size: 18px;
+  font-weight: 700;
+  width: 25%;
+  height: 100%;
+  border: none;
+}
+.slide-bar button:hover {
+  background-color: var(--vl-grey);
+}
+.see-portfolio-btn {
+  width: 252px;
+  height: 72px;
+}
+.active {
+  color: #ffffff;
+  background-color: var(--vd-blue) !important;
+}
+@media screen and (min-width: 576px) {
+  .paramour {
+    height: 94vw;
+    margin-bottom: 5.5rem;
+  }
+  .paramour-text {
+    width: 79%;
+    height: 355px;
+    margin: 186px auto 179px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .paramour {
+    height: 50vw;
+    margin-bottom: 6.8rem;
+  }
+  .paramour-text {
+    width: 49%;
+    height: 335px;
+    margin: 16.76% 33.87% 16.13% 17.12%;
+  }
+}
+
+/* ================================================ */
+/* Paramour Section END*/
+/* ================================================ */
+/* ================================================ */
+/* Welcome Section */
+/* ================================================ */
+.welcome {
+  width: 311px;
+  margin: 0 auto 7rem auto;
+}
+.welcome-img {
+  right: 0;
+  bottom: 100px;
+  z-index: -1;
+}
+.welcome-banner {
+  transform: translateY(25%);
+}
+
+@media screen and (min-width: 576px) {
+  .welcome {
+    width: 74.5vw;
+    margin-bottom: 14.5rem;
+
+  }
+}
+@media screen and (min-width: 992px) {
+  .welcome {
+    margin-bottom: 12.5rem;
+
+  }
+  .welcome-paragraph {
+    width: 31vw;
+    margin-left: 11.5rem;
+  }
+}
+/* ================================================ */
+/* Welcome Section END */
+/* ================================================ */
+/* ================================================ */
+/* About Section */
+/* ================================================ */
+.about-img {
+  height: 560px;
+  margin-bottom: 4.5rem;
+}
+.about-text {
+  width: calc(100% - 64px);
+}
+.about-title {
+  color: #ffffff;
+  margin-bottom: 23px;
+}
+.about-btn {
+  width: 187px;
+  height: 72px;
+}
+@media screen and (min-width: 992px) {
+  .about-img {
+    margin-bottom: 12.5rem;
+  }
+  .about-text > * {
+    margin-left: 190px;
+  }
+}
+/* ================================================ */
+/* About Section End */
+/* ================================================ */
+
+.feature {
+  max-width: 83vw;
+  margin-bottom: 4.5rem;
+}
+.feature-heading {
+  margin-bottom: 2.5rem;
+}
+.featured-btn {
+  width: 169px;
+  height: 72px;
+}
+.feature-text {
+  color: #ffffff;
+  left: 24px;
+  bottom: 24px;
+}
+.project-link {
+  /* text-decoration: none; */
+  color: #ffffff;
+}
+.feature-img {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.feature-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+}
+.feature-index {
+  font-weight: 700;
+  letter-spacing: -5px;
+  line-height: 200px;
+}
+@media screen and (min-width: 576px) {
+  .feature {
+    max-width: 74.5vw;
+    margin-bottom: 12.5rem;
+  }
+
+  .feature-index {
+    margin: 0 !important;
+    z-index: 1;
+    right: 16px;
+    top: 29px;
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 250px;
+    /* max-height: 200px; */
+  }
+}
+@media screen and (min-width: 992px) {
+  .feature {
+    max-width: 77vw;
+  }
+  .feature-index {
+    margin: 0 !important;
+    z-index: 1;
+    right: 0;
+    top: 45px;
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 250px;
+  }
+}

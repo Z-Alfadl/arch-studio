@@ -1,0 +1,41 @@
+.portfolio {
+    max-width: 83vw;
+    margin-bottom: 72px;
+}
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.portfolio-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    pointer-events: none;
+}
+.portfolio-image:hover::before {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.0));
+}
+.portfolio-text {
+    color: #fff;
+    left: 35px;
+    bottom: 24px;
+}
+.portfolio-text p {
+ color: rgba(255, 255, 255, 0.8);   
+}
+
+@media screen and (min-width: 576px) {
+    .portfolio {
+        margin-bottom: 12.5rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .portfolio {
+        margin-bottom: 10rem;
+    }
+}

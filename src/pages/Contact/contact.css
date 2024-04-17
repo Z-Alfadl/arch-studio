@@ -1,0 +1,153 @@
+#hero-section {
+    margin-bottom: 100px;
+}
+#contact-call {
+  width: 83vw;
+  margin: 0 auto;
+}
+#contact-call::before {
+  position: absolute;
+  content: "";
+  width: 91vw;
+  height: 12vw;
+  bottom: 100px;
+  left: 0;
+  background: #fff;
+}
+#contact-details, #contact-form {
+  width: 83vw;
+  margin: 0 auto 73px;
+}
+#contact-details hr {
+    margin-bottom: 68px;
+}
+.office-location {
+    margin-bottom: 40px;
+}
+.office-location ul {
+    list-style: none;
+    padding: 0;
+}
+.view-on-map {
+    background: none;
+    border: none;
+    font-weight: 700;
+    margin-top: 34px;
+}
+.view-on-map:hover {
+    text-decoration: underline;
+}
+#form-container {
+    overflow: auto;
+}
+input {
+    border: none;
+    border-bottom: 1px solid var(--vd-blue);
+    width: 100%;
+}
+input[type="text"], input[type="email"] {
+    height: 44px;
+}
+input[type="textarea"] {
+    height: 92px;
+}
+#submit-btn {
+    background-color: var(--vd-blue);
+    color: #ffffff;
+    width: 80px;
+    height: 80px;
+    float: right;
+    
+}
+#map-section {
+    margin-bottom: 73px;
+}
+#map, .map-container {
+  height: 400px !important;
+  width: 100% !important;
+}
+
+button > svg {
+  pointer-events: none;
+}
+
+.error {
+    color: var(--error);
+    border-bottom: 1px solid var(--error);
+  }
+  .error::placeholder {
+    color: var(--error);
+  }
+  
+  .error-message {
+    color: red;
+  }
+
+  @media screen and (min-width: 576px) {
+    #contact-call {
+        background-color: #fff;
+        /* transform: translate(30px, -325px); */
+        position: absolute;
+        bottom: -9px;
+        left: 60px;
+        width: 515px;
+        /* height: 431px; */
+    }
+    #contact-call::before {
+        top: -87px;
+        width: 73vw;
+        height: 88px;
+        /* border: 1px solid black; */
+    }
+    #contact-call-h {
+        font-size: 72px;
+        margin-bottom: 37px;
+    }
+    #contact-call h1 {
+        top: -180px;
+    }
+    #contact-call hr {
+        margin-bottom: 73px;
+    }
+    #contact-details, #contact-form {
+        width: 74.5vw;
+    }
+    #contact-details h2 {
+        margin-bottom: 42px;
+    }
+    #contact-form h2 {
+        margin-bottom: 60px;
+    }
+  }
+
+  @media screen and (min-width: 992px){
+    #contact-call {
+        left: 460px;
+    }
+    #contact-call::before {
+        width: 15vw;
+    }
+    #contact-call h1 {
+        left: -201px;
+    }
+    #contact-form {
+        width: 77.1vw;
+    }
+    #form-container {
+        width: 50.1vw;
+    }
+  }
+/* 
+@media screen and (min-width: 576px) {
+    #map {
+        height: 560px;
+        width: 572px;
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    #map {
+        width: 1110px;
+    }
+} */
