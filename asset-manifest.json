@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/arch-studio/static/css/main.a007c358.css",
+    "main.js": "/arch-studio/static/js/main.31e930bd.js",
+    "static/js/453.5775bf78.chunk.js": "/arch-studio/static/js/453.5775bf78.chunk.js",
+    "index.html": "/arch-studio/index.html",
+    "main.a007c358.css.map": "/arch-studio/static/css/main.a007c358.css.map",
+    "main.31e930bd.js.map": "/arch-studio/static/js/main.31e930bd.js.map",
+    "453.5775bf78.chunk.js.map": "/arch-studio/static/js/453.5775bf78.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a007c358.css",
+    "static/js/main.31e930bd.js"
+  ]
+}
