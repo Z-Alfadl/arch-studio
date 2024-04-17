@@ -8,7 +8,7 @@ export const About = () => {
       <section id="hero-section">
         <div id="about-hero">
           <img
-            src={`./assets/about/${source}/image-hero.jpg`}
+            src={`${process.env.PUBLIC_URL}/assets/about/${source}/image-hero.jpg`}
             alt="About Hero"
             className="about-hero img-fluid"
           />
@@ -40,7 +40,7 @@ export const About = () => {
               world-class professionals provides input on every project.
             </p>
         </div>
-        {viewport > 992 ? <img src={`./assets/about/${source}/image-heritage.jpg`} alt="Heritage" className="heritage-img" /> : null}
+        {viewport > 992 ? <img src={`${process.env.PUBLIC_URL}/assets/about/${source}/image-heritage.jpg`} alt="Heritage" className="heritage-img" /> : null}
       </section>
       <Leaders />
     </main>

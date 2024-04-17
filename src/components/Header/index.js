@@ -8,7 +8,7 @@ export const Header = () => {
       <nav className="navbar navbar-expand-sm">
       <div className="container-fluid">
         <Link to={"/"}>
-          <img src={'./assets/logo.svg'} alt="logo" className="" />
+          <img src={`${process.env.PUBLIC_URL}/assets/logo.svg`} alt="logo" className="" />
         </Link>
 
         <button

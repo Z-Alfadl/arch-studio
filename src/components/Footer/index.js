@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="m-auto">
       <div className="d-flex flex-column flex-sm-row align-items-center footer-container">
       <div className="logo-container d-flex flex-wrap align-items-center">
-      <img className="logo mx-auto" src={"./assets/logo-white.svg"} alt="logo" />
+      <img className="logo mx-auto" src={`${process.env.PUBLIC_URL}/assets/logo-white.svg`} alt="logo" />
       </div>
       <nav className="footer-nav-container navbar navbar-expand-sm">
 

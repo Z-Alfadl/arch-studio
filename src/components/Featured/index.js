@@ -65,22 +65,3 @@ export const Featured = () => {
     </div>
   );
 };
-/* <div className="col-12 col-lg-4" key={index}>
-            <div className="feature-card  d-flex align-items-end" style={{backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(./assets/portfolio/${source}/${feature.image})`}}>
-              {viewport > 576 ? <p className="heading-xl">{index+1}</p> : null}
-              <div className="feature-title mb-4 ms-4">
-                <h3 className="heading-s">{feature.title}</h3>
-                <a href="#" className="body project-link">
-                  View All Projects
-                </a>
-                </div>
-            </div>
-          </div> */
-
-// Fix columns to display in a row on desktop
-// Fix columns to display in a column on tablet/mobile
-// Add responsive size to background images
-// Add Number to column outside mobile view
-// left align text outside mobile view
-// Link Button needs to move/be displayed at top of section for tablet/desktop
-// Check LinkButton size

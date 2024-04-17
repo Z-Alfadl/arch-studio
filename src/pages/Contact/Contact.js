@@ -21,7 +21,7 @@ export const Contact = () => {
       <section id="hero-section">
         <div id="contact-hero">
           <img
-            src={`./assets/contact/${source}/image-hero.jpg`}
+            src={`${process.env.PUBLIC_URL}/assets/contact/${source}/image-hero.jpg`}
             alt="Contact Hero"
             className="contact-hero img-fluid"
           />

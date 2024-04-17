@@ -2,24 +2,10 @@ import { useState, useEffect } from "react";
 import { portfolioProjects } from "../../utils/imageArrays";
 import { PortfolioIndex } from "../../components/Portfolio Index";
 import "./portfolio.css";
+import { useViewPort } from "../../utils/Context";
 export const Portfolio = () => {
-  console.log(portfolioProjects);
-  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
-  const [source, setSource] = useState("mobile");
-  useEffect(() => {
-    const handleWindowResize = () => setViewportWidth(window.innerWidth);
-    window.addEventListener("resize", handleWindowResize);
-    return () => window.removeEventListener("resize", handleWindowResize);
-  }, []);
-  useEffect(() => {
-    if (viewportWidth >= 992) {
-      setSource("desktop");
-    } else if (viewportWidth >= 576) {
-      setSource("tablet");
-    } else {
-      setSource("mobile");
-    }
-  }, [viewportWidth]);
+  const { source} = useViewPort();
+  
   return (
     <main>
       <div className="portfolio mx-auto">
@@ -35,7 +21,7 @@ export const Portfolio = () => {
                     <a href="#">
                       <img
                         className="img-fluid"
-                        src={`./assets/portfolio/${source}/${project.src}`}
+                        src={`${process.env.PUBLIC_URL}/assets/portfolio/${source}/${project.src}`}
                         alt={project.project}
                       ></img>
                     <div className="position-absolute text-start portfolio-text">
