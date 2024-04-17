@@ -45,7 +45,7 @@ export const Featured = () => {
                   </p>
                 ) : null}
                 <img
-                  src={`./assets/portfolio/${source}/${feature.image}`}
+                  src={`${process.env.PUBLIC_URL}/assets/portfolio/${source}/${feature.image}`}
                   alt={feature.title}
                   className="img-fluid"
                 />

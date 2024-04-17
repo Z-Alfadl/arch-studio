@@ -6,7 +6,6 @@ import { ContactForm } from "./ContactForm";
 export const Contact = () => {
   const { viewport, source } = useViewPort();
   const [center, setCenter] = useState({ lat: 34.307826092925396, lng: -90.59790380643479 });
-  //   var map = L.map('map').setView([51.505, -0.09], 13);
   const handleClick = (e) => {
     
     let coordinates = e.target.value.split(",");
@@ -155,16 +154,3 @@ export const Contact = () => {
   );
 };
 
-/* CONTACT SECTION
-    - Copy hero section css from About page (identical) DONE
-    - Css for contact details, map and form ALMOST DONE
-    - JS for form submission and error handling
-    - Integrate LeafletJS for map
-    - Convert address to link for map
-    - Add hover effects to buttons and links
-
-  ABOUT SECTION
-  - Add hover link effects to the team portraits
-*/
-
-// AIzaSyBLvl-JHW8aqf6surYTRSEt0K0g4ZiP1yk

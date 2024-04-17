@@ -51,7 +51,7 @@ export const Paramour = () => {
       <div
         className="paramour"
         style={{
-          backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.01%), rgba(0, 0, 0, 40.0%) ),url(./assets/home/${source}/image-hero-${currentSlide.image})`,
+          backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.01%), rgba(0, 0, 0, 40.0%) ),url(${process.env.PUBLIC_URL}/assets/home/${source}/image-hero-${currentSlide.image})`,
         }}
       >
         <div className="paramour-text">

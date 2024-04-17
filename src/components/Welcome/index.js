@@ -28,7 +28,7 @@ export const Welcome = () => {
         </p>
       </div>
      {viewport > 992 ? <img
-        src="./assets/home/desktop/image-welcome.jpg"
+        src={`${process.env.PUBLIC_URL}/assets/home/desktop/image-welcome.jpg`}
         alt="welcome"
         className="welcome-img position-absolute img-fluid"
       /> : null}
