@@ -30,7 +30,7 @@ function App() {
     }
   }, [viewport]);
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       
       <Header />
       
