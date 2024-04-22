@@ -1,5 +1,4 @@
 import { LinkButton } from "../Links/LinkButton";
-import { Column } from "./Column";
 import { useViewPort } from "../../utils/Context";
 export const Featured = () => {
   const { viewport, source } = useViewPort();

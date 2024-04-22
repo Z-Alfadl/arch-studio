@@ -35,8 +35,3 @@ export const Welcome = () => {
     </div>
   );
 };
-
-//work on css for welcome section
-//add media queries for welcome section
-//base on mobile first, then standardize quries for tablet and desktop
-// ensure img is displayed properly on desktop

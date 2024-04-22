@@ -1,6 +1,4 @@
-import { useState, useEffect } from "react";
 import { portfolioProjects } from "../../utils/imageArrays";
-import { PortfolioIndex } from "../../components/Portfolio Index";
 import "./portfolio.css";
 import { useViewPort } from "../../utils/Context";
 export const Portfolio = () => {
@@ -38,13 +36,4 @@ export const Portfolio = () => {
       </div>
     </main>
   );
-}; //shits fucked, fix
-
-/* <div className="container overflow-hidden">
-                <div className="row  gy-4">
-                    
-                    {portfolioProjects.map((project, index) => {
-                        return <PortfolioIndex key={index} project={project.project} date={project.date} src={project.src} />
-                    })}
-                </div>
-            </div> */
+};

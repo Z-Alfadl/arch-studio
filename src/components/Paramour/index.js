@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Slides } from "./Slides";
 import { LinkButton } from "../Links/LinkButton";
 import { useViewPort } from "../../utils/Context";
@@ -65,7 +65,6 @@ export const Paramour = () => {
         </div>
       </div>
       {
-        //only render slides if viewport width is greater than 768
         viewport > 768 ? (
           <Slides
             slides={heroSlides}

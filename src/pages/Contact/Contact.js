@@ -1,24 +1,25 @@
 import { useState } from "react";
 import { useViewPort } from "../../utils/Context";
-import { GMap } from "./GMap";
+import { GMap } from "../../components/Maps/GMap";
+import { LeafMap } from "../../components/Maps/LeafMap";
 import "./contact.css";
 import { ContactForm } from "./ContactForm";
 export const Contact = () => {
   const { viewport, source } = useViewPort();
-  const [center, setCenter] = useState({ lat: 34.307826092925396, lng: -90.59790380643479 });
+  const [center, setCenter] = useState([
+     34.307826092925396,
+    -90.59790380643479,
+  ]);
+  const [gCenter, setGCenter] = useState({lat: 34.307826092925396, lng: -90.59790380643479});
+
   const handleClick = (e) => {
-    
-    let coordinates = e.target.value.split(",");
-    // console.log(coordinates.split(","));
-    let newPosition = {
-      lat: parseFloat(coordinates[0]),
-      lng: parseFloat(coordinates[1]),
-    };
-    setCenter(newPosition);
-     };
+    let coordinates = e.target.value.split(",")
+    setCenter(coordinates);
+    setGCenter({lat: parseFloat(coordinates[0]), lng: parseFloat(coordinates[1])});
+  };
   return (
     <main>
-      <section id="hero-section">
+      <section id="hero-section" >
         <div id="contact-hero">
           <img
             src={`${process.env.PUBLIC_URL}/assets/contact/${source}/image-hero.jpg`}
@@ -32,7 +33,6 @@ export const Contact = () => {
           ) : null}
           {viewport > 576 ? <hr /> : null}
           <h2 className="heading-m" id="contact-call-h">
-           
             Tell us about your project
           </h2>
 
@@ -46,7 +46,6 @@ export const Contact = () => {
       <section id="contact-details">
         <hr />
         <div className="d-lg-flex justify-content-between">
-          {/* <hr /> */}
           <h2 className="heading-l">
             Contact <br /> Details
           </h2>
@@ -128,20 +127,12 @@ export const Contact = () => {
               </svg>
             </button>
           </div>
-          
         </div>
       </section>
       <section id="map-section">
-        <GMap center={center} />
-        {/* <LeafMap /> */}
-        {/* <iframe
-          style={{ width: "600", height: "450", style: "border:0" }}
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed/v1/place?key=API_KEY
-    &q=Space+Needle,Seattle+WA"
-        ></iframe> */}
+        {process.env.REACT_APP_GOOGLE_MAP_KEY === undefined ? <LeafMap center={center} />
+        : <GMap center={gCenter} />
+        }
       </section>
       <section id="contact-form" className="d-lg-flex justify-content-between">
         <h2 className="heading-l">
@@ -153,4 +144,3 @@ export const Contact = () => {
     </main>
   );
 };
-

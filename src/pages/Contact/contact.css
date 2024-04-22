@@ -137,17 +137,3 @@ button > svg {
         width: 50.1vw;
     }
   }
-/* 
-@media screen and (min-width: 576px) {
-    #map {
-        height: 560px;
-        width: 572px;
-    }
-    
-}
-
-@media screen and (min-width: 992px){
-    #map {
-        width: 1110px;
-    }
-} */

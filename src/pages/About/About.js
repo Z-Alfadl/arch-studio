@@ -46,15 +46,3 @@ export const About = () => {
     </main>
   );
 };
-
-//Working on the About page
-/* 
-    -- Complete styling and positioning for #hero-section on tablet
-    -- Complete styling and positioning for #hero-section and #pro-team on desktop
-    -- Add hover link effects to the team portraits
-    -- Check over portfolio and home pages for any additional styling or positioning changes
-
-
-    *FINGERS CROSSED*
-    -- Work on Contact page
-*/

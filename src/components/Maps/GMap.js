@@ -1,12 +1,11 @@
-import { GoogleMap, MarkerF, useLoadScript } from "@react-google-maps/api";
+import { GoogleMap, MarkerF, AdvancedMarker, useLoadScript } from "@react-google-maps/api";
 import { useEffect, useState } from "react";
-// import 'dotenv/config'
 const locationOne = { lat: 35.964444501002475, lng: -83.92014290990828 };
 const locationTwo = { lat: 32.70533113620866, lng: -96.6384445594109 };
 export const GMap = ({ center }) => {
   const [zoom, setZoom] = useState(6);
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.REACT_APP_KEY,
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_KEY,
   });
   useEffect(() => {
     const stringifiedCenter = JSON.stringify(center);
